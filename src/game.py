@@ -11,10 +11,11 @@ class Game:
         self.player = Player()
         self.stats = Stats()
         self.areas = [
-            Area(\"Gym\", pygame.Rect(100, 100, 150, 100)),
-            Area(\"Library\", pygame.Rect(550, 100, 150, 100)),
-            Area(\"Dorm\", pygame.Rect(100, 400, 150, 100)),
-            Area(\"Field\", pygame.Rect(550, 400, 150, 100))
+            Area("Gym", pygame.Rect(100, 100, 150, 100)),
+            Area("Library", pygame.Rect(550, 100, 150, 100)),
+            Area("Dorm", pygame.Rect(100, 400, 150, 100)),
+            Area("Field", pygame.Rect(550, 400, 150, 100))
+
         ]
 
     def update(self, keys):

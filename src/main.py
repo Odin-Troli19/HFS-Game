@@ -6,7 +6,7 @@ from settings import *
 def main():
     pygame.init()
     window = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption(\"High School Football Star\")
+    pygame.display.set_caption("High School Football Star")
     clock = pygame.time.Clock()
     game = Game(window)
 
@@ -21,5 +21,5 @@ def main():
         game.update(keys)
         game.draw()
 
-if __name__ == \"__main__\":
+if __name__ == "__main__":
     main()

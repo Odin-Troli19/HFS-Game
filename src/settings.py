@@ -4,9 +4,9 @@ WIDTH, HEIGHT = 800, 600
 # Colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-GREEN = (0, 200, 0)
-RED = (200, 0, 0)
-BLUE = (0, 0, 200)
+GRAY = (180, 180, 180)
+BLUE = (0, 120, 215)
+RED = (200, 30, 30)
 
 # Player settings
 PLAYER_SPEED = 5

@@ -1,25 +1,25 @@
 import pygame
 import sys
-from game import Game
+from animation import IntroAnimation
+from menu import MainMenu
 from settings import *
 
 def main():
     pygame.init()
     window = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("High School Football Star")
-    clock = pygame.time.Clock()
-    game = Game(window)
 
-    while True:
-        clock.tick(60)
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+    # Optional: Background music
+    # pygame.mixer.music.load("assets/sounds/menu_music.mp3")
+    # pygame.mixer.music.play(-1)
 
-        keys = pygame.key.get_pressed()
-        game.update(keys)
-        game.draw()
+    # Play intro animation
+    intro = IntroAnimation(window)
+    intro.play()
+
+    # Show main menu
+    menu = MainMenu(window)
+    menu.run()
 
 if __name__ == "__main__":
     main()
